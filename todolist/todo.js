@@ -83,7 +83,7 @@ const generateTemp = todo => {
 const storedTodos = () => {
    let todos = JSON.parse(localStorage.getItem('Todos'));
 
-   if(todos.length > -1) {
+   if(todos !== null) {
       todos.forEach(element => {
       Mytodos.push(element);
       list.innerHTML += `
