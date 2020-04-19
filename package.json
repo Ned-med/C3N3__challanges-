@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  	"test": "echo \"Error: no test specified\" && exit 1",
-	"deployAng": "gh-pages -d ./Analog-clock-challange",
-	"deployTodo": "gh-pages -d ./todolist"
+	"deploy": "gh-pages -d Analog-clock-challange/"
   },
   "repository": {
     "type": "git",
