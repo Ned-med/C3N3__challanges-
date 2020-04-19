@@ -83,7 +83,8 @@ const generateTemp = todo => {
 const storedTodos = () => {
    let todos = JSON.parse(localStorage.getItem('Todos'));
 
-   todos.forEach(element => {
+   if(todos.length > -1) {
+      todos.forEach(element => {
       Mytodos.push(element);
       list.innerHTML += `
       <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -91,7 +92,8 @@ const storedTodos = () => {
       <i class="fas fa-trash delete"></i>
       </li>
       `;
-   });
+   }); 
+      }
 }
 storedTodos();
 
